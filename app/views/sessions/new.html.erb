@@ -1,0 +1,23 @@
+
+
+    <div class="col-md-6">
+      <div class="">
+        <%= form_tag sessions_path, class: 'box' do |form| %>
+          <h1>Login</h1>
+          <p class="text-muted"> Please enter your login and password!</p> 
+          <div class="field">
+            <%= label_tag :email %>
+            <%= text_field_tag :email %>
+          </div>
+          <div class="field">
+            <%= label_tag :password %>
+            <%= password_field_tag :password %>
+          </div>
+          <div class="actions">
+            <%= submit_tag "Login" %>
+          </div>
+        <% end %>
+         
+      </div>
+    </div>
+ 

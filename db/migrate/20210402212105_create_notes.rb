@@ -5,6 +5,8 @@ class CreateNotes < ActiveRecord::Migration[6.1]
       t.string :color
       t.string :icon
       t.text :description
+
+      t.references :user, foreign_key: true
       t.timestamps
     end
   end
