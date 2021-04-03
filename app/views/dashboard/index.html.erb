@@ -1,0 +1,30 @@
+<div class="row mt-5">
+  <div class="btn-group ml-3">
+    <%= link_to new_note_path, class: 'btn btn-primary' do %>
+      Adicionar
+      <i class="m-l-5 fa fa-plus"></i>
+    <% end %>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <% Note.find_each do |note| %>
+    <div class="card ml-3 mt-3" style="width: 16rem; background-color: <%= note.color %>">
+      <div class="card-body">
+        <div class="d-flex justify-content-center">
+          <i class="<%= note.icon %> fa-3x"></i>
+        </div>
+        <div class="d-flex justify-content-center">
+          <h5 class="card-title"><%= note.name %></h5>
+        </div>
+        <%= link_to edit_note_path(note), class: 'btn btn-primary btn-sm' do %>
+          Ver Notas
+          <i class="fas fa-edit"></i>
+        <% end %>
+        <%= link_to note, method: :delete, data: { confirm: 'Tem a certeza' }, class: 'btn btn-primary btn-sm' do %>
+          <i class="far fa-trash-alt"></i>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

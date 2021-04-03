@@ -1,0 +1,762 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+pt:
+  # MAIN ONES
+  'true': Sim
+  'false': Não
+  new: 'Novo'
+  remove_item:
+    zero: Tem a certeza que pretende remover este item?
+    one: Este item tem 1 dependente. Tem a certeza que o pretende remover?
+    other: 'Este item tem %{count} dependentes. Tem a certeza que o pretende remover?'
+  remove_items:
+    remove_question_multiple_rows: Tem a certeza que pretende eliminar os itens selecionados?
+  access: Acesso
+  read: Leitura
+  write: Escrita
+  save: Guardar
+  saving: A guardar...
+  cancel: Cancelar
+  edit: Editar
+  delete: Apagar
+  go_back: Voltar
+  add: Adicionar
+  total: Total
+  all_data: Dados (Todos)
+  update: Atualizar
+  portfolio: Biblioteca
+  generic: Genérico
+  result: Resultado
+  hit: Atingido
+  clean_selection: Limpar Seleção
+  updated: Foi atualizado com sucesso!
+  back_to_portal: Voltar ao Portal
+  logout: 'Sair'
+  created: Foi criado com sucesso!
+  nif: Nif
+  cloned: Foi copiado com sucesso!
+  destroyed: Foi removido com sucesso!
+  not_found: Não é possível exportar o ficheiro
+  file_must_be_present: Um ficheiro deve estar selecionado!
+  remove_question: Tem a certeza que pretende remover este item?
+  year_start: Ano de Início
+  year_end: Ano de Fim
+  estimated_value_shareholder: Valor estimado pelo acionista
+  operational_report: Relatório Operacional
+  estimated_value_company: Valor estimado pela empresa
+  estimated_value_final: Valor estimado final
+  monthly: Mensalmente
+  yearly: Anualmente
+  select_a_year: Selecionar ano
+  item_not_found: O item solicitado não existe!
+  choose_objective_type: Escolha o tipo de objetivo
+  performance: Desempenho
+  historical_performance: Histórico de Desempenho
+  historical_results: Histórico de Resultados
+  annual_target_value: Valor Estimado Anual
+  download_file: Download do ficheiro
+  objective: Objectivo operacional
+  portal_company: Empresa do portal
+  variables: Variáveis
+  variable: Variável
+  _analyses: Análise
+  choose_the_portal_company: Escolha a empresa do portal
+  use: Usar
+  real_value_peer_period: Real (Períodos homólogos)
+  estimated_values_peer_period: Estimado (Períodos homólogos)
+  main_details: Detalhes principais
+  characteristics: Características
+  access_denied: Não tem autorização para aceder a essa página
+  weights_operational_indicators: Pesos Indicadores Operacionais
+  weights_operational_objectives: Pesos Objectivos Operacionais
+  annual_score_relative_to_annual_estimated_value: Pontuação Anual Relativa ao Valor Estimado Anual
+  weights_strategic_objectives: Pesos Objectivos Estratégicos
+  percentage_reached_over_the_estimated: Percentagem atingida face ao estimado
+  customizable: Customizável
+  something_went_wrong: Não foi possível realizar o pedido.
+  sent_to_background: O pedido foi enviado ao servidor, assim que concluído você receberá o relatório no seu email
+  invalid_variable: 'A variável %{portfolio_variable} não está disponível para esta biblioteca.'
+  exists_in_generic: 'A variável existe com o código %{code} na biblioteca genérica.'
+  exists_in_company: 'A variável existe com o código %{code} na biblioteca de empresa.'
+  invalid_code: 'A variável existe com o código %{code} existe na(s) biblioteca(s) da(s) empresa(s).'
+  calculation_type: Tipo de Cálculo
+  number_of_months: Número de Meses
+  see_number_of_months:
+    zero: nenhum mês
+    one: 1 mês
+    other: '%{count} meses'
+  by_month: por mês
+  strategic: Estratégico
+  operational: Operacional
+  going_up: Tendência crescente
+  going_down: Tendência decrescente
+  company: Empresa
+  address: Endereço
+
+  # MODELS
+  id: ID
+  name: Nome
+  code: Código
+  alternative_code: Código Interno
+  subdomain: Sub-Domínio
+  status: Estado
+  email: Email
+  warning_email: Email para Notificações
+  logo: Logotipo
+  token: Token
+  actions: Açōes
+  year: Ano
+  active: Ativo
+  inactive: Inativo
+  description: Descrição
+  key: Código
+  unit: Unidade
+  kind: Tipo
+  tag: Tag
+  tags: Tags
+  decimal_points: Casas decimais
+  month: Mês
+  months: Meses
+  date_field: Data
+  data: Dados
+  data_template: Modelo de Dados
+  portfolio_template: Modelo da Biblioteca
+  estimated_template: Modelo de Estimativas
+  integer: Inteiro
+  decimal: Decimal
+  boolean: Booleano
+  estimated: Estimado
+  differential: Diferença
+  accumulated: Acumulado
+  accumulated_homologous: Acumulado (Períodos homólogos)
+  real_homologous: Valor Real (Períodos homólogos)
+  accumulated_real_value: Valor real acumulado
+  accumulated_estimated_value: Valor estimado acumulado
+  view_accumulated: Visão acumulada
+  yearly_measures: Número de Medições Anuais
+  weight: Ponderação (%)
+  weight_percentage: Ponderação do indicador (%)
+  weight_percentages: Ponderação dos indicadores (%)
+  update_weight: Atualizar Ponderação
+  tenant_weight: Ponderação do objectivo na empresa (%)
+  all_variables_ok: Todas as variavéis preenchidas com sucesso!
+  simple_formula: Formula simples
+  accumulated_formula: Formula acumulado
+  color: Cor
+  value: Valor
+  real_value: Valor real
+  estimated_value: Valor estimado
+  file: Ficheiro
+  created_at: Criado
+  started_at: Iniciado
+  finished_at: Terminado
+  calculate_from: Calcular desde
+  duration: Tempo de execução
+  sheet: Folha
+  row_number: Número da Linha
+  indicator_result: Resultado
+  percentage: Percentagem
+  differential_percentage: Percentagem diferencial
+  general: Geral
+  details: Detalhes
+  score: Resultado
+  scores: Resultados
+  month_score: Resultado do mês
+  year_score: Resultado do Ano
+  annual_score: Resultado acumulado relativo ao valor estimado anual
+  ca_report: Relatório CA
+  data_kind: Tipo de dados
+  direct: Simples
+  all_data: Todos os dados
+  historic_data: Dados antigos
+  has: tem
+  dependents: dependentes
+  new_data: Dados futuros
+  sum: Soma
+  average: Média
+  maximum: Máximo
+  minimum: Mínimo
+  unexpected_error: Ocorreu um erro. Por favor volte a tentar e caso seja recorrente reporte a situação.
+  complete: Completa
+  incomplete: Incompleta
+  error_description: Descrição do erro
+  origin: Origem
+  change_all_tenants_acceptance_html: Aceito e compreendo que esta alteração será aplicada em <strong>todas as empresas</strong>.
+  period:
+    period: Período
+    format: '%{start} a %{end}'
+  user: Utilizador
+  owner: Owner
+  aquapor_admin: Aquapor Admin
+  aquaboard_admin: Aquaboard Admin
+  to_clone:  a clonar
+  company_admin: Portal::Company Admin
+
+  # SPECIFIC
+  companies:
+    select: Selecione uma Empresa
+
+  users:
+    users: Utilizadores
+    user: Utilizador
+    select: Selecionar Utilizador
+    admin: Administrador
+
+  trend:
+    trend: Tendência
+    going_up: Ascendente
+    going_down: Descendente
+
+  imports:
+    imports: Importações
+    new: Adicionar importação
+    select_kind: Selecione um tipo de Importação
+    annual_target_value: Estimado Anual
+    import_errors: Linhas com erro
+    pending: Pendente
+    executing: A executar...
+    finished: Concluído
+    with_error: Com erro
+    all: Tudo
+    measures: Medições
+    BSC: BSC
+    all_measures: Medições (todas)
+    all_data: Dados (todos)
+    operational_report: Dados do Reporte Operacional
+    annual_management: Gestão Anual
+    estimated_indicators: Estimativas
+    import_all_variables: Importe todas as variáveis para este mês
+    state_of_var_import: Estado das importações de variáveis em
+    import_complete: Importação completa
+    import_incomplete: Importação incompleta
+    import_future: Mês no futuro
+    file_not_valid: O ficheiro não é válido!
+    file_not_presented: Não indicou o ficheiro!
+    missing_columns: 'Faltam as colunas seguintes:'
+    sheet_error: Erro a importar a folha
+    no_var_code: Não existe variável com o código
+    uneditable: Sem permissão para editar
+    invalid_year: O ano %{year} não é válido.
+    company_code: O código da empresa - %{company} não é válido!
+    formula_check: A variável - %{variable} não é válida para a empresa - %{company}
+    invalid_month: 'O mês %{month} não é válido'
+    year_must_be_presented: Um ano deve estar selecionado!
+    one_import_per_year: Apenas uma importação válida por cada ano!
+    objective_not_valid: 'O objectivo %{objective} não é válido.'
+    invalid_measurement_unit: 'Unidade de medida -> %{measurement_unit}, não é válida'
+    portfolio_objective_not_valid: 'O Objectivo -> %{portfolio_objective}, não é válido'
+    invalid_weight: O valor de ponderação não é válido.
+    estimated_value_final: 'O valor estimado final %{final_value} não é válido.'
+    invalid_portfolio_indicator: 'O indicator %{portfolio_indicator} não é válido.'
+    invalid_annual_management: 'A Gestão Anual para o ano %{year} não é valida ou não foi criada.'
+    invalid_indicator: 'O indicator operacional %{portfolio_indicator} para o ano %{year} não é válido.'
+    invalid_indicator_estimated: 'A estimativa para o indicador %{portfolio_indicator} não é valida (Estimado anual: %{estimated}).'
+    boundaries_not_going_up: Fronteiras não estão sequencialmente ascendentes, indicador - %{portfolio_indicator}.
+    boundaries_not_going_down: Fronteiras não estão sequencialmente descendentes, indicador - %{portfolio_indicator}.
+
+  exports:
+    export: Exportar
+    exports: Exportações
+    select_kind: Selecione um tipo de Exportação
+
+  statistic_batches:
+    statistic_batches: Cálculos de Resultados
+    statistic_batch: Cálculo de Resultados
+    running: A calcular resultados...
+    finished: Concluído
+    cancelled: Cancelado
+    statistic_batchable:
+      none: Sem origem definida
+      annual_management: Gestão Anual
+      objective: Objectivo
+      indicator: Indicador
+      measure: Medição
+      import: Importação
+
+  statistic_batch_items:
+    statistic_batch_items: Fases de cálculo
+    statistic_batch_item: Fase de cálculo
+    unchanged: Sem alterações
+    executing: A executar
+    finished: Concluído
+    ignored: Ignorado
+    with_error: Com erros
+    portfolio_indicator_stats: Resultados de Indicadores
+    objective_stats: Resultados de Objectivos
+    perspective_stats: Resultados de Perspectivas
+    tenant_stats: Resultados da Empresa
+
+  measures_import:
+    start_importing: A importar
+
+  groups:
+    groups: Grupos
+    group: Grupo
+    new: Adicionar Grupo
+    edit: Alterar Grupo
+    select: Selecione um Grupo
+
+  permissions:
+    permissions: Permissões
+    permission: Permissão
+    new: Adicionar Permissão
+    edit: Alterar permissões
+    strategic: Estratégico
+    operational: Operacional
+    performance: Desempenho
+
+  boundaries:
+    boundaries: Fronteiras
+    boundary: Fronteira
+
+  indicator_results:
+    indicator_results: Resultados
+
+  left_sidebar:
+    dashboard: Dashboard
+    admin: Administração
+    config: Configuração
+    groups: Grupos
+    groups_list: Lista de Grupos
+    portfolio_objectives: Objectivos
+    portfolio_indicators: Indicadores
+    strategic_objectives: Objectivos Estratégicos
+    strategic_indicators: Indicadores Estratégicos
+    operational_management: Gestão Operacional
+    operational_objectives: Objectivos Operacionais
+    operational_indicators: Indicadores Operacionais
+    permissions: Permissões
+    portfolio: Biblioteca
+    bsc: BSC
+    business_management: Estrutura
+    annual_management: Gestão Anual
+    variables: Variáveis
+    variables_list: Lista de Variáveis
+    strategic: Gestão Estratégica
+    operational: Gestão Operacional
+    weights: 'Ponderações'
+    strategics: 'Estratégicos'
+    reports: 'Relatórios'
+    annual_report: 'Relatório Anual'
+    monthly_report: 'Relatório Mensal'
+
+  dashboard:
+    dashboard: Dashboard
+    active_tenants: Empresas ativas
+    portfolio: Biblioteca
+    strategic_objectives: Objectivos Estratégicos
+    operational_objectives: Objectivos Operacionais
+
+  tenants:
+    tenants: Empresas
+    tenant: Empresa
+    new: Adicionar Empresa
+    select: Selecionar Empresa
+    details: Análise da empresa
+    missing: Não está selecionada a empresa!
+
+  tenant_users:
+    tenant_users: Acessos
+    tenant_user: Acesso
+    new: Adicionar acesso
+    edit: Editar acesso
+
+  annual_managements:
+    annual_management: Gestão Anual
+    new: Adicionar Gestão Anual
+    copy: Copiar Gestão Anual
+    shareholder_structure: Estrutura acionista
+    mission: Missão
+    vision: Visão
+    values: Valores
+    locked: Bloqueado
+    clear_selected: Limpar Seleção
+    empty: Empresa sem nenhuma Gestão Anual
+
+  portfolio_objectives:
+    portfolio_objectives: Objectivos
+    portfolio_objective: Objectivo
+    new: Adicionar Objectivo
+    select: Selecione um objetivo
+    permissions: Permissões
+
+  portfolio_indicators:
+    portfolio_indicators: Indicadores
+    portfolio_indicator: Indicador
+    new: Adicionar Indicador
+    select: Selecione um indicador
+    performance_indicator: Indicador Operacional
+    permissions: Permissões
+
+  strategic_objectives:
+    objectives: Objectivos Estratégicos da Empresa
+    objective: Objectivo Estratégico da Empresa
+    new: Adicionar Objectivo Estratégico da Empresa
+    details: Análise do Objectivo Estratégico
+    missing: Não existem objectivos estratégicos
+    objectives_weights: 'Ponderações objectivos estratégicos'
+
+  operational_objectives:
+    objectives: Objectivos Operacionais da Empresa
+    objective: Objectivo Operacional da Empresa
+    new: Adicionar Objectivo Operacional da Empresa
+    details: Análise do Objectivo Operational
+    missing: Não existem objectivos operacionais
+    objectives_weights: 'Ponderações objectivos operacionais'
+
+  indicators:
+    indicators: Indicadores Operacional
+    operational_indicator: Indicador Operacional
+    strategic_indicator: Indicador Estratégico
+    new: Adicionar Indicador Operacional da Empresa
+    details: Análise do Indicador Operacional
+
+  strategic_indicators:
+    strategic_indicators: Indicadores Estratégicos da Empresa
+    strategic_indicator: Indicador Estratégico da Empresa
+    new: Adicionar Indicador Estratégico da Empresa
+    details: Análise do Indicador Estratégico
+    missing: Não existem indicadores estratégicos
+
+  operational_indicators:
+    operational_indicators: Indicadores Operacionais da Empresa
+    operational_indicator: Indicador Operacional da Empresa
+    new: Adicionar Indicador Operacional da Empresa
+    details: Análise do Indicador Operacional
+    missing: Não existem indicadores operacionais
+
+  tenant_weights:
+    tenant_weights: Ponderações
+
+  perspectives:
+    perspectives: Perspectivas
+    description: Descrição
+    select: Selecione uma perspectiva
+    description_perspective: Descrição da perspectiva
+    new: Adicionar perspectiva
+    edit: Editar Perspectiva
+    perspective_name: Nome da perspectiva
+    perspective: Perspectiva
+
+  frequencies:
+    frequencies: Periodicidades
+    frequency: Periodicidade
+    new: Adicionar Periodicidade
+    select: Selecione uma periodicidade
+
+  measurement_units:
+    measurement_units: Unidades de Medida
+    measurement_unit: Unidade de Medida
+    new: Adicionar Unidade de Medida
+    select: Selecione uma unidade de medida
+
+  portfolio_variables:
+    new: Adicionar Variável
+    portfolio_variables: Variáveis
+    portfolio_variable: Variável
+    select: Selecione uma variável
+    details: Detalhes da Variável
+    missing:
+      zero: Não falta nenhuma variável
+      one: Falta uma variável
+      other: Faltam %{count} variáveis
+
+  measures:
+    measures: Medições
+    measure: Medição
+    new: Adicionar Medição
+    date_at: Mês/Ano
+    value: Valor medido
+    estimated_value: Valor estimado
+    measures_template: Modelo de Medições
+
+  stickers:
+    stickers: Marcadores
+    sticker: Marcador
+    new: Adicionar Marcador
+    edit: Editar Marcador
+    dashboard_position: Posição no Dashboard
+
+  calculation_types:
+    calculation_types: Tipos de Cálculo
+    calculation_type: Tipo de Cálculo
+    aggregate: Agregar
+
+  comments:
+    comments: Comentários
+    new: Adicione um comentário
+
+  audits:
+    create: 'Novo/a:'
+    destroy: 'Removido/a:'
+    added: 'adicionado'
+    removed: 'apagado/a'
+    from: de
+    to: para
+
+  activerecord:
+    errors:
+      models:
+        indicator:
+          attributes:
+            going_up:
+              boundaries_not_going_up: Fronteiras não estão sequencialmente ascendentes
+              boundaries_not_going_down: Fronteiras não estão sequencialmente descendentes
+      messages:
+        record_invalid: 'A validação falhou: %{errors}'
+        restrict_dependent_destroy:
+          has_many: 'Não pode ser eliminado por existirem dependências de %{record}'
+          has_one: 'Não pode ser eliminado por existir uma dependência de %{record}'
+        missing_months: Deve existir um registo por cada mês do ano
+        sum_percentages_over_hundred: A soma das percentagens não pode ser maior que 100!
+        sum_percentages_a_hundred: A soma das percentagens deve ser 100!
+        one_per_annual_management: Apenas um por ano
+        should_happen_once_variable_per_month: Apenas uma variável por mês
+        unmatched_annual_management: Não pertence à mesma Gestão Anual
+        annual_management_not_cloned: Não foi possível copiar Gestão Anual
+        formula_built: A estrutura da fórmula não está correta.
+        formula_variable: Fórmula com variável inexistente.
+        there_are_dependencies: Não é possivel apagar, existem dependências.
+        year_cannot_be_changed: O ano não pode ser alterado.
+        must_be_after_the_start_date: Não é possível adicionar Medições no Futuro.
+        unsaved: Não foi possível guardar as alterações!
+        spoofed_media_type: O conteúdo do ficheiro é inválido.
+        something_went_wrong: Não foi possível realizar o pedido.
+        invalid_variable: 'A variável %{company} não está disponível para este indicador.'
+
+  # RAILS DEFAULTS
+  date:
+    abbr_day_names:
+    - Dom
+    - Seg
+    - Ter
+    - Qua
+    - Qui
+    - Sex
+    - Sáb
+    abbr_month_names:
+    -
+    - Jan
+    - Fev
+    - Mar
+    - Abr
+    - Mai
+    - Jun
+    - Jul
+    - Ago
+    - Set
+    - Out
+    - Nov
+    - Dez
+    day_names:
+    - Domingo
+    - Segunda-feira
+    - Terça-feira
+    - Quarta-feira
+    - Quinta-feira
+    - Sexta-feira
+    - Sábado
+    formats:
+      default: "%d/%m/%Y"
+      long: "%d de %B de %Y"
+      short: "%d de %B"
+    month_names:
+    -
+    - Janeiro
+    - Fevereiro
+    - Março
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: aproximadamente 1 hora
+        other: 'aproximadamente %{count} horas'
+      about_x_months:
+        one: aproximadamente 1 mês
+        other: 'aproximadamente %{count} meses'
+      about_x_years:
+        one: aproximadamente 1 ano
+        other: 'aproximadamente %{count} anos'
+      almost_x_years:
+        one: quase 1 ano
+        other: 'quase %{count} anos'
+      half_a_minute: meio minuto
+      less_than_x_minutes:
+        one: menos de um minuto
+        other: 'menos de %{count} minutos'
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: 'menos de %{count} segundos'
+      over_x_years:
+        one: mais de 1 ano
+        other: 'mais de %{count} anos'
+      x_days:
+        one: 1 dia
+        other: "%{count} dias"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minutos"
+      x_months:
+        one: 1 mês
+        other: "%{count} meses"
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
+      x_years:
+        one: 1 ano
+        other: "%{count} anos"
+    prompts:
+      day: Dia
+      hour: Hora
+      minute: Minuto
+      month: Mês
+      second: Segundo
+      year: Ano
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: Tem de ser aceite
+      blank: não pode estar em branco
+      confirmation: não coincide com a confirmação
+      empty: não pode estar vazio
+      equal_to: 'tem de ser igual a %{count}'
+      even: tem de ser par
+      exclusion: é reservado
+      greater_than: 'tem de ser maior que %{count}'
+      greater_than_or_equal_to: 'tem de ser maior ou igual a %{count}'
+      inclusion: não está incluído na lista
+      invalid: é inválido
+      less_than: 'tem de ser menor que %{count}'
+      less_than_or_equal_to: 'tem de ser menor ou igual a %{count}'
+      model_invalid: 'A validação falhou: %{errors}'
+      not_a_number: não é um número
+      not_an_integer: tem de ser um inteiro
+      odd: tem de ser ímpar
+      other_than: 'tem de ser diferente de %{count}'
+      present: não pode estar em branco
+      required: é obrigatório
+      taken: não está disponível
+      too_long: 'é demasiado grande (o máximo é de %{count} caracteres)'
+      too_short: 'é demasiado pequeno (o mínimo é de %{count} caracteres)'
+      wrong_length: 'comprimento errado (deve ter %{count} caracteres)'
+    template:
+      body: 'Por favor, verifique os seguintes campos:'
+      header:
+        one: '1 erro impediu guardar este %{model}'
+        other: '%{count} erros impediram guardar este %{model}'
+  helpers:
+    select:
+      prompt: Por favor seleccione
+    submit:
+      create: 'Criar %{model}'
+      submit: 'Gravar %{model}'
+      update: 'Actualizar %{model}'
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 3
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "€"
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            one: mil milhões
+            other: mil milhões
+          million:
+            one: milhão
+            other: milhões
+          quadrillion:
+            one: mil biliões
+            other: mil biliões
+          thousand: mil
+          trillion:
+            one: bilião
+            other: biliões
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+          pb: PB
+          eb: EB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ", e"
+      two_words_connector: " e "
+      words_connector: ", "
+  time:
+    am: am
+    formats:
+      default: "%A, %d de %B de %Y, %H:%Mh"
+      long: "%A, %d de %B de %Y, %H:%Mh"
+      short: "%d/%m, %H:%M hs"
+    pm: pm
