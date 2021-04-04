@@ -17,3 +17,12 @@ ActiveStorage.start()
 
 require("trix")
 require("@rails/actiontext")
+
+require("bootstrap")
+import "../../assets/stylesheets/application";
+document.addEventListener("turbolinks:load", function() {
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+    })
+})
