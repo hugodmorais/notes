@@ -2,6 +2,17 @@
   <div class="col-lg-12">
     <div class="panel-body px-5">
       <div class="container pt-4">
+        <div id="notice" class="noticesWrapper">
+          <% flash.each do |name, msg| %>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              <%= t msg, default: msg %>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>              
+          <% end %>
+        </div>
+        </script>
         <%= form_with(model: @note, local: true) do |f| %>
           <% if @note.errors.any? %>
             <div id="error_explanation">

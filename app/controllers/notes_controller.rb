@@ -21,6 +21,7 @@ class NotesController < ApplicationController
 
   def update
     if @note.update(note_params)
+      flash[:success] = 'Atualizado com sucesso!'
       redirect_back(fallback_location: root_path)
     else
       render :edit
