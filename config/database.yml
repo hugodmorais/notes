@@ -17,11 +17,17 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  timeout: 5000 
+  template: template0
+  pool: 10
+  host: 'localhost'
+  port: 5432
+  username: dev
+  password: 'dev'
+  adapter: postgresql
+  encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: 'dev'
-  password: 'dev'
 
 development:
   <<: *default
@@ -84,5 +90,4 @@ test:
 production:
   <<: *default
   database: notes_production
-  username: notes
-  password: <%= ENV['NOTES_DATABASE_PASSWORD'] %>
+  
