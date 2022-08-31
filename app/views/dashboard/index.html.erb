@@ -13,6 +13,7 @@
 </div>
 
 <div class="row mt-5">
+  <h1><%= @host %></h1>
   <% @notes.find_each do |note| %>
     <div class="card ml-3 mt-3" style="width: 16rem; background-color: <%= note.color %>">
       <div class="card-body">
